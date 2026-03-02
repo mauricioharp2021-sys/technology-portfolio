@@ -144,6 +144,25 @@
                 </p>
             </section>
         </article>
+
+        <section class="box-demo" id="box-demo">
+            <header>
+                <h2>Box Sizing Demo</h2>
+                <h3>content-box vs border-box</h3>
+            </header>
+
+            <div class="box-parent">
+                <p><strong>Parent box</strong> (fixed width)</p>
+
+                <div class="box-child-default">
+                    Child (default sizing). width: 100% + padding can overflow.
+                </div>
+
+                <div class="box-child-borderbox">
+                    Child (border-box). width: 100% includes padding, so it fits.
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>

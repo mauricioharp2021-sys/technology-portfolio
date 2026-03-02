@@ -4,10 +4,10 @@
 
 /* TYPE SELECTOR */
 body {
-  background-color: #ffffff;     /* light background for accessibility */
-  color: #222222;                /* dark text for contrast */
+  background-color: #ffffff; /* keep */
+  color: #222222;            /* keep */
   font-family: sans-serif;
-  font-size: 1rem;               /* relative unit */
+  font-size: 1rem;           /* relative unit */
 }
 
 /* =========================
@@ -16,17 +16,17 @@ body {
 
 /* TYPE SELECTORS */
 h1 {
-  color: #0b3d91;                /* dark blue */
-  font-size: 2rem;               /* relative unit */
+  color: #0b3d91;            /* keep */
+  font-size: 2rem;           /* relative unit */
 }
 
 h2 {
-  color: #1b5e20;                /* dark green */
+  color: #1b5e20;            /* keep */
   font-size: 1.5rem;
 }
 
 h3 {
-  color: #333333;
+  color: #333333;            /* keep */
   font-size: 1.1rem;
 }
 
@@ -36,13 +36,13 @@ h3 {
 
 /* DESCENDANT SELECTOR */
 nav ul li a {
-  color: #0b3d91;
+  color: #0b3d91;            /* keep */
   text-decoration: none;
 }
 
 /* PSEUDO-CLASS */
 nav ul li a:hover {
-  color: #1b5e20;
+  color: #1b5e20;            /* keep */
 }
 
 /* =========================
@@ -59,7 +59,7 @@ p {
    ========================= */
 
 #overview {
-  background-color: #f5f5f5;     /* subtle contrast, still readable */
+  background-color: #f5f5f5; /* keep */
 }
 
 /* =========================
@@ -69,5 +69,78 @@ p {
 /* TYPE SELECTOR */
 address {
   font-style: normal;
-  color: #222222;
+  color: #222222;            /* keep */
+}
+
+/* ==========================================================
+   BOX MODEL WEEK (spacing + borders + sizing)
+   ========================================================== */
+
+/* A) DEBUG BORDER (turn on briefly, then keep commented out)
+-------------------------------------------------------------- */
+/*
+* {
+  border: 1px solid black;
+}
+*/
+
+/* C) Center main container with width + margin:auto
+-------------------------------------------------------------- */
+main {
+  width: 75%;
+  margin: 0 auto;            /* required centering */
+  padding: 1.25rem;          /* rem spacing requirement */
+  border: 2px solid #222222;
+}
+
+/* B) Style layout boxes: section and p
+   (each has at least 2 of margin/padding/border/width)
+-------------------------------------------------------------- */
+section {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #222222;
+}
+
+p {
+  margin: 0.75rem 0;
+  padding: 0.5rem;
+  border: 1px dashed #333333;
+}
+
+/* Optional: lightly box header/footer so it’s clear */
+header, footer {
+  padding: 1rem;
+  border: 1px solid #222222;
+}
+
+/* ==========================================================
+   D) BOX-SIZING DEMO (nested boxes)
+   ========================================================== */
+
+.box-demo {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 2px solid #222222;
+}
+
+.box-parent {
+  width: 320px;              /* fixed width so overflow is obvious */
+  padding: 1rem;
+  border: 2px solid #222222;
+}
+
+/* Default sizing (content-box): can overflow with padding */
+.box-child-default {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #0b3d91; /* your blue */
+}
+
+/* Border-box fix: fits inside parent */
+.box-child-borderbox {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #1b5e20; /* your green */
+  box-sizing: border-box;    /* required demonstration */
 }
