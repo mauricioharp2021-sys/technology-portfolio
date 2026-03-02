@@ -2,7 +2,6 @@
    Base document styles
    ========================= */
 
-/* TYPE SELECTOR */
 body {
   background-color: #ffffff; /* keep */
   color: #222222;            /* keep */
@@ -14,7 +13,6 @@ body {
    Headings
    ========================= */
 
-/* TYPE SELECTORS */
 h1 {
   color: #0b3d91;            /* keep */
   font-size: 2rem;           /* relative unit */
@@ -30,26 +28,28 @@ h3 {
   font-size: 1.1rem;
 }
 
+h4 {
+  color: #444444;
+  font-size: 1rem;
+}
+
 /* =========================
    Navigation
    ========================= */
 
-/* DESCENDANT SELECTOR */
 nav ul li a {
   color: #0b3d91;            /* keep */
   text-decoration: none;
 }
 
-/* PSEUDO-CLASS */
 nav ul li a:hover {
   color: #1b5e20;            /* keep */
 }
 
 /* =========================
-   Main content
+   Main content text
    ========================= */
 
-/* TYPE SELECTOR */
 p {
   line-height: 1.6;
 }
@@ -66,7 +66,6 @@ p {
    Address element
    ========================= */
 
-/* TYPE SELECTOR */
 address {
   font-style: normal;
   color: #222222;            /* keep */
@@ -77,8 +76,15 @@ address {
    ========================================================== */
 
 /* A) DEBUG BORDER (turn on briefly, then keep commented out)
--------------------------------------------------------------- */
-
+--------------------------------------------------------------
+Uncomment this to see EVERY box, then comment it out again
+before submitting.
+*/
+/*
+* {
+  border: 1px solid black;
+}
+*/
 
 /* C) Center main container with width + margin:auto
 -------------------------------------------------------------- */
@@ -86,28 +92,42 @@ main {
   width: 75%;
   margin: 0 auto;            /* required centering */
   padding: 1.25rem;          /* rem spacing requirement */
+  border: 3px solid #222222; /* stronger border for visibility */
+  background-color: #ffffff;
+}
+
+/* Optional: box the site header/footer so it’s obvious */
+body > header,
+body > footer {
+  padding: 1rem;
   border: 2px solid #222222;
+  background-color: #fafafa;
 }
 
 /* B) Style layout boxes: section and p
-   (each has at least 2 of margin/padding/border/width)
+(each has at least 2 of margin/padding/border/width)
 -------------------------------------------------------------- */
 section {
   margin: 1rem 0;
   padding: 1rem;
-  border: 1px solid #222222;
+  border: 2px solid #0b3d91;   /* blue */
+  background-color: #f0f6ff;   /* light blue */
 }
 
 p {
   margin: 0.75rem 0;
-  padding: 0.5rem;
-  border: 1px dashed #333333;
+  padding: 0.75rem;
+  border: 2px dashed #1b5e20;  /* green dashed */
+  background-color: #f3faf3;   /* light green */
 }
 
-/* Optional: lightly box header/footer so it’s clear */
-header, footer {
+/* Make the figure/aside visible as boxes too (helpful) */
+figure,
+aside {
+  margin: 1rem 0;
   padding: 1rem;
-  border: 1px solid #222222;
+  border: 2px solid #333333;
+  background-color: #f7f7f7;
 }
 
 /* ==========================================================
@@ -117,26 +137,30 @@ header, footer {
 .box-demo {
   margin: 1rem 0;
   padding: 1rem;
-  border: 2px solid #222222;
+  border: 3px solid #222222;
+  background-color: #fff7e6;   /* light warm background so it stands out */
 }
 
 .box-parent {
-  width: 320px;              /* fixed width so overflow is obvious */
+  width: 320px;               /* fixed width so overflow is obvious */
   padding: 1rem;
-  border: 2px solid #222222;
+  border: 3px solid #222222;
+  background-color: #eeeeee;
 }
 
 /* Default sizing (content-box): can overflow with padding */
 .box-child-default {
   width: 100%;
   padding: 1rem;
-  border: 2px solid #0b3d91; /* your blue */
+  border: 3px solid #0b3d91;  /* blue */
+  background-color: #e6f0ff;
 }
 
 /* Border-box fix: fits inside parent */
 .box-child-borderbox {
   width: 100%;
   padding: 1rem;
-  border: 2px solid #1b5e20; /* your green */
-  box-sizing: border-box;    /* required demonstration */
+  border: 3px solid #1b5e20;  /* green */
+  background-color: #e8f5e9;
+  box-sizing: border-box;     /* required demonstration */
 }
