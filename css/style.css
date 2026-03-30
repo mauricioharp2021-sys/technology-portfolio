@@ -14,6 +14,11 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   text-align: left;
+
+  /* Flexbox layout */
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
 }
 
 /* =========================
@@ -58,6 +63,15 @@ h4 {
    Navigation
    ========================= */
 
+nav {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 200px;
+  max-width: 200px;
+  padding: 1rem;
+  background-color: #fafafa;
+}
+
 nav ul {
   list-style-type: none;
   padding-left: 0;
@@ -82,16 +96,24 @@ nav ul li a:hover {
    Main layout
    ========================= */
 
+body > header {
+  flex: 1 1 100%;
+  padding: 1rem;
+  border: 2px solid #222222;
+  background-color: #fafafa;
+}
+
 main {
-  width: 75%;
-  margin: 0 auto;
+  flex: 3 1 700px;
+  width: auto;
+  margin: 0;
   padding: 1.25rem;
   border: 3px solid #222222;
   background-color: #ffffff;
 }
 
-body > header,
 body > footer {
+  flex: 1 1 100%;
   padding: 1rem;
   border: 2px solid #222222;
   background-color: #fafafa;
