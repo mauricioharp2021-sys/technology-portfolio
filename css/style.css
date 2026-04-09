@@ -19,6 +19,8 @@ body {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
 /* =========================
@@ -68,6 +70,7 @@ nav {
   flex-direction: column;
   flex: 1 1 200px;
   max-width: 200px;
+  min-width: 160px;
   padding: 1rem;
   background-color: #fafafa;
 }
@@ -92,6 +95,11 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+nav ul li a:focus {
+  outline: 2px solid #1b5e20;
+  outline-offset: 2px;
+}
+
 /* =========================
    Main layout
    ========================= */
@@ -105,7 +113,7 @@ body > header {
 
 main {
   flex: 3 1 700px;
-  width: auto;
+  min-width: 0;
   margin: 0;
   padding: 1.25rem;
   border: 3px solid #222222;
@@ -193,6 +201,7 @@ pre {
    ========================= */
 
 figure {
+  width: 100%;
   max-width: 700px;
 }
 
@@ -232,6 +241,7 @@ ol {
 
 .box-parent {
   width: 320px;
+  max-width: 100%;
   padding: 1rem;
   border: 3px solid #222222;
   background-color: #eeeeee;
