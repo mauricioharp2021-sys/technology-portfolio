@@ -19,7 +19,7 @@
         "@type": "Person",
         "name": "Mauricio Harp"
       },
-      "about": {
+      "mainEntity": {
         "@type": "CreativeWork",
         "name": "ICT 420 Website Project",
         "description": "A student project focused on semantic HTML structure, accessibility, and web development learning."
@@ -32,63 +32,198 @@
         "schema.org",
         "ICT 420"
       ],
+      "about": [
+        "Semantic Web Development",
+        "website structure",
+        "accessibility"
+      ],
       "hasPart": [
-        { "@type": "WebPageElement", "name": "What this site is" },
-        { "@type": "WebPageElement", "name": "Current goal" },
-        { "@type": "WebPageElement", "name": "What I will add later" },
-        { "@type": "WebPageElement", "name": "Tools and Workflow" },
-        { "@type": "WebPageElement", "name": "Box Sizing Demo" }
+        {
+          "@type": "WebPageElement",
+          "name": "What this site is"
+        },
+        {
+          "@type": "WebPageElement",
+          "name": "Current goal"
+        },
+        {
+          "@type": "WebPageElement",
+          "name": "What I will add later"
+        },
+        {
+          "@type": "WebPageElement",
+          "name": "Tools and Workflow"
+        },
+        {
+          "@type": "WebPageElement",
+          "name": "Box Sizing Demo"
+        }
       ]
     }
     </script>
 </head>
 
 <body>
-<header>
-    <h1>Mauricio Harp</h1>
-</header>
+    <header>
+        <h1>Mauricio Harp</h1>
+    </header>
 
-<nav>
-    <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-<main>
-    <article id="overview">
-        <header>
-            <h2>Project Overview</h2>
-            <p>Semantic Web Development</p>
-        </header>
-
-        <section id="what-this-site-is">
+    <main>
+        <article id="overview">
             <header>
-                <h3>What this site is</h3>
-                <h4>Structure first</h4>
+                <h2>Project Overview</h2>
+                <p>Semantic Web Development</p>
             </header>
 
-            <figure>
-                <picture>
-                    <source srcset="media/dog-small.jpg" media="(max-width: 672px)">
-                    <source srcset="media/dog-large.jpg" media="(min-width: 673px)">
-                    <img src="media/dog-large.jpg" alt="My dog lying on a hardwood floor in sunlight">
-                </picture>
-                <figcaption>My dog relaxing at home.</figcaption>
-            </figure>
+            <section id="what-this-site-is">
+                <header>
+                    <h3>What this site is</h3>
+                    <h4>Structure first</h4>
+                </header>
 
-            <aside>This site is being built step-by-step using semantic HTML5 structure.</aside>
+                <figure>
+                    <picture>
+                        <source srcset="media/dog-small.jpg" media="(max-width: 672px)">
+                        <source srcset="media/dog-large.jpg" media="(min-width: 673px)">
+                        <img src="media/dog-large.jpg" alt="My dog lying on a hardwood floor in sunlight">
+                    </picture>
+                    <figcaption>My dog relaxing at home.</figcaption>
+                </figure>
 
-            <p>This website is part of my ICT 420 course where we are learning how to structure web pages using semantic HTML.</p>
-            <p>Jump to my <a href="#current-goal">current goal</a>.</p>
-            <p>I use the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><cite>MDN HTML documentation</cite></a>.</p>
+                <aside>This site is being built step-by-step using semantic HTML5 structure.</aside>
+
+                <p>
+                    This website is part of my ICT 420 course where we are learning how to structure web pages using semantic HTML.
+                    The goal of this project is to build a simple site that shows what I’m learning throughout the semester while
+                    focusing on clear structure and meaningful elements before worrying about design.
+                </p>
+
+                <p>
+                    Jump to my <a href="#current-goal">current goal</a> section on this page.
+                </p>
+
+                <p>
+                    I use the
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><cite>MDN HTML documentation</cite></a>
+                    as a reference when I’m learning new elements and best practices.
+                </p>
+
+                <p>
+                    Right now I’m mainly practicing how to organize a page with headers, sections, navigation, and other semantic
+                    elements so the content is easy to follow. That matters not only for readers, but also for screen readers and
+                    other tools that depend on good HTML structure.
+                </p>
+
+                <p>
+                    Working this way has helped me understand that structure comes before design. If the page is organized well now,
+                    it will be much easier to style and expand later in the semester.
+                </p>
+            </section>
+
+            <section id="current-goal">
+                <header>
+                    <h3>Current goal</h3>
+                    <h4>Consistency across pages</h4>
+                </header>
+
+                <p>
+                    My current goal is to keep the site organized and consistent across all three pages. I want the navigation,
+                    section structure, and overall layout to feel connected instead of looking like separate pieces.
+                </p>
+
+                <p>
+                    I’m also focusing on keeping the headings in a logical order so the outline of each page makes sense. That way,
+                    as I add more content later, I can build on the structure I already have instead of starting over.
+                </p>
+            </section>
+
+            <section id="future-plans">
+                <header>
+                    <h3>What I will add later</h3>
+                    <h4>Content and metadata</h4>
+                </header>
+
+                <p>
+                    Later in the semester I plan to expand this site by adding more content to each page, including a small
+                    portfolio section and more details about my background. I also want the site to reflect more of what I learn
+                    in class as we move into CSS, layout, and other web development topics.
+                </p>
+
+                <p>
+                    I will continue improving the metadata in the head section as we learn more about search engines and
+                    structured data. Keeping the metadata clear and accurate helps both users and machines understand the purpose
+                    of the site.
+                </p>
+
+                <p>
+                    For now, I’m keeping the design simple and focusing on building a strong foundation. Once the structure is
+                    solid, I can style the site more confidently without losing clarity or organization.
+                </p>
+            </section>
+        </article>
+
+        <article id="setup">
+            <header>
+                <h2>Tools and Workflow</h2>
+                <p>VS Code, Git, and GitHub</p>
+            </header>
+
+            <section id="my-setup">
+                <header>
+                    <h3>My setup</h3>
+                    <h4>How I’m building the site</h4>
+                </header>
+
+                <p>
+                    I’m building this site using VS Code and GitHub. Writing locally and pushing updates helps me track
+                    changes and see my progress through commit history.
+                </p>
+
+                <p>
+                    GitHub Pages makes it easy to publish the site as a real website. It’s helpful because I can test
+                    navigation and see how the pages work in a real browser.
+                </p>
+
+                <p>
+                    My current setup is macOS. I’m keeping the workflow simple: edit, save, commit, push, and check the live site.
+                </p>
+
+                <p>
+                    Back to the top: <a href="#overview">Project Overview</a>.
+                </p>
+            </section>
+        </article>
+
+        <section class="box-demo" id="box-demo">
+            <header>
+                <h2>Box Sizing Demo</h2>
+                <p>content-box vs border-box</p>
+            </header>
+
+            <div class="box-parent">
+                <p><strong>Parent box</strong> (fixed width)</p>
+
+                <div class="box-child-default">
+                    Child (default sizing). width: 100% + padding can overflow.
+                </div>
+
+                <div class="box-child-borderbox">
+                    Child (border-box). width: 100% includes padding, so it fits.
+                </div>
+            </div>
         </section>
-    </article>
-</main>
+    </main>
 
-<footer>
-    <address>Mauricio Harp</address>
-</footer>
+    <footer>
+        <address>Mauricio Harp</address>
+    </footer>
 </body>
 </html>
