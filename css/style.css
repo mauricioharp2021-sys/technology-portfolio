@@ -19,6 +19,9 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 /* =========================
@@ -37,6 +40,7 @@ h1 {
   color: #0b3d91;
   font-size: 2rem;
   font-weight: 700;
+  margin-bottom: 0.25rem;
 }
 
 h2 {
@@ -57,6 +61,12 @@ h4 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.02em;
+}
+
+.site-tagline {
+  margin: 0.25rem 0 0;
+  color: #444444;
+  font-size: 1rem;
 }
 
 /* =========================
@@ -85,9 +95,11 @@ nav li {
 }
 
 nav ul li a {
+  display: inline-block;
   color: #0b3d91;
   text-decoration: none;
   font-weight: 600;
+  padding: 0.25rem 0;
 }
 
 nav ul li a:hover {
@@ -118,6 +130,7 @@ main {
   padding: 1.25rem;
   background-color: #ffffff;
   border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 body > footer {
@@ -125,6 +138,8 @@ body > footer {
   padding: 1rem;
   background-color: #fafafa;
   border-radius: 8px;
+  font-size: 0.95rem;
+  color: #555555;
 }
 
 section {
@@ -132,6 +147,7 @@ section {
   padding: 1rem;
   background-color: #f0f6ff;
   border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
 /* =========================
@@ -140,11 +156,8 @@ section {
 
 p {
   margin: 0.75rem 0;
-  padding: 0.5rem;
-  background-color: #f3faf3;
   line-height: 1.6;
   max-width: 65ch;
-  border-radius: 6px;
 }
 
 aside,
