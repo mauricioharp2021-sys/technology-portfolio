@@ -45,8 +45,9 @@ h1 {
 
 h2 {
   color: #1b5e20;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
+  margin-bottom: 0.75rem;
 }
 
 h3 {
@@ -56,11 +57,11 @@ h3 {
 }
 
 h4 {
-  color: #444444;
-  font-size: 1rem;
+  color: #555555;
+  font-size: 0.95rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
 }
 
 .site-tagline {
@@ -82,6 +83,7 @@ nav {
   padding: 1rem;
   background-color: #fafafa;
   border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
 nav ul {
@@ -112,6 +114,13 @@ nav ul li a:focus {
   outline-offset: 2px;
 }
 
+nav a[aria-current="page"] {
+  color: #ffffff;
+  background-color: #0b3d91;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+}
+
 /* =========================
    Main layout
    ========================= */
@@ -127,7 +136,7 @@ main {
   flex: 3 1 700px;
   min-width: 0;
   margin: 0;
-  padding: 1.25rem;
+  padding: 1.5rem;
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
@@ -143,11 +152,15 @@ body > footer {
 }
 
 section {
-  margin: 1rem 0;
+  margin: 1.25rem 0;
   padding: 1rem;
   background-color: #f0f6ff;
   border-radius: 8px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.intro {
+  background-color: #eef6ff;
 }
 
 /* =========================
@@ -156,8 +169,8 @@ section {
 
 p {
   margin: 0.75rem 0;
-  line-height: 1.6;
-  max-width: 65ch;
+  line-height: 1.7;
+  max-width: 68ch;
 }
 
 aside,
@@ -227,11 +240,13 @@ figure img {
   height: auto;
   display: block;
   border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 figcaption {
   font-style: italic;
   font-size: 0.95rem;
+  margin-top: 0.5rem;
 }
 
 aside {
