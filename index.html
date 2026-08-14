@@ -5,39 +5,59 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mauricio Harp">
-    <meta name="description" content="A technology portfolio website focused on semantic HTML, CSS, responsive layouts, accessibility, and JSON-LD structured data.">
-    <meta name="keywords" content="technology portfolio, HTML5, CSS3, JSON-LD, schema.org, accessibility, responsive web design">
+    <meta name="description" content="Mauricio Harp's Information Communication Technology portfolio featuring academic work, technical skills, web development, accessibility, and semantic web development.">
+    <meta name="keywords" content="Mauricio Harp, ICT student, University of Kentucky, technology portfolio, web development, semantic HTML, CSS, accessibility, systems analysis">
     <link rel="stylesheet" href="css/style.css">
-
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "Mauricio Harp | Technology Portfolio",
-      "description": "A technology portfolio website focused on semantic HTML, CSS, responsive layouts, accessibility, and JSON-LD structured data.",
+      "description": "Mauricio Harp's Information Communication Technology portfolio featuring academic work, technical skills, web development, accessibility, and semantic web development.",
       "author": {
         "@type": "Person",
-        "name": "Mauricio Harp"
+        "name": "Mauricio Harp",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Kentucky"
+        },
+        "knowsAbout": [
+          "Information Communication Technology",
+          "Technology Management",
+          "Web Development",
+          "Semantic HTML",
+          "CSS",
+          "Responsive Web Design",
+          "Accessibility",
+          "Systems Analysis",
+          "Cybersecurity",
+          "Networking",
+          "JSON-LD"
+        ]
       },
       "mainEntity": {
         "@type": "CreativeWork",
-        "name": "Semantic Web Portfolio Project",
-        "description": "A portfolio project focused on semantic HTML structure, accessibility, responsive design, and structured metadata."
+        "name": "Mauricio Harp Technology Portfolio",
+        "description": "A professional portfolio showcasing academic work, technical skills, projects, and interests in Information Communication Technology."
       },
       "keywords": [
-        "HTML5",
-        "CSS3",
-        "Flexbox",
-        "JSON-LD",
-        "schema.org",
-        "web accessibility",
-        "responsive web design"
+        "Information Communication Technology",
+        "Technology Management",
+        "Web Development",
+        "Semantic HTML",
+        "CSS",
+        "Accessibility",
+        "Systems Analysis",
+        "Cybersecurity",
+        "JSON-LD"
       ],
       "about": [
-        "semantic web development",
-        "website structure",
-        "accessibility",
-        "structured metadata"
+        "Information Communication Technology",
+        "Technology Management",
+        "Web Development",
+        "Systems Analysis",
+        "Accessibility",
+        "Semantic Web Development"
       ],
       "hasPart": [
         {
@@ -46,146 +66,172 @@
         },
         {
           "@type": "WebPageElement",
-          "name": "Portfolio Overview"
+          "name": "About My Work"
         },
         {
           "@type": "WebPageElement",
-          "name": "Skills"
+          "name": "Technical Skills"
         },
         {
           "@type": "WebPageElement",
-          "name": "Tools and Workflow"
+          "name": "Career Interests"
         }
       ]
     }
     </script>
 </head>
-
 <body>
     <header>
         <h1>Mauricio Harp</h1>
-        <p class="site-tagline">ICT Student | University of Kentucky</p>
+        <p class="site-tagline">Information Communication Technology Student | University of Kentucky</p>
     </header>
-
-    <nav>
+    <nav aria-label="Main navigation">
         <ul>
             <li><a href="index.html" aria-current="page">Home</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-
     <main>
         <section class="intro">
-            <h2>Welcome</h2>
+            <header>
+                <h2>Welcome</h2>
+                <p>Technology, information, and problem-solving</p>
+            </header>
             <p>
-                Hi, I’m Mauricio Harp. This website highlights my work with semantic HTML, CSS,
-                responsive layouts, accessibility, and JSON-LD structured data.
+                Hi, I'm Mauricio Harp. I am an Information Communication Technology
+                student at the University of Kentucky with a focus on Technology Management.
             </p>
             <p>
-                You can explore my project overview, learn more about me, and see how I’ve used
-                web development concepts to build a structured and accessible website.
+                This website serves as my technology portfolio and highlights my academic
+                work, technical skills, projects, and interests in technology.
+            </p>
+            <p>
+                I am particularly interested in systems analysis, healthcare information
+                technology, web development, information systems, cybersecurity, and
+                technology management.
             </p>
         </section>
-
         <article id="overview">
             <header>
-                <h2>Portfolio Overview</h2>
-                <p>Semantic Web and Technology Project</p>
+                <h2>About My Work</h2>
+                <p>Building practical technology skills through coursework and projects</p>
             </header>
-
             <section id="what-this-site-is">
                 <header>
                     <h3>What this site is</h3>
-                    <h4>Structure first</h4>
+                    <h4>My technology portfolio</h4>
                 </header>
-
-                <aside>This site is built using semantic HTML5 structure, CSS, Flexbox, and JSON-LD metadata.</aside>
-
+                <aside>
+                    This portfolio demonstrates semantic HTML, CSS, responsive design,
+                    accessibility, and JSON-LD structured data.
+                </aside>
                 <p>
-                    This website shows my work with semantic HTML, CSS, responsive layout, accessibility,
-                    and structured metadata. The goal is to create a simple site that is organized,
-                    readable, and easier for both users and machines to understand.
+                    This website brings together information about my education,
+                    technical skills, projects, and professional interests as I continue
+                    developing my career in Information Communication Technology.
                 </p>
-
                 <p>
-                    I use the
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><cite>MDN HTML documentation</cite></a>
-                    as a reference when learning new elements and best practices.
+                    The site is designed using semantic HTML elements such as
+                    <code>header</code>, <code>nav</code>, <code>main</code>,
+                    <code>article</code>, <code>section</code>, and <code>footer</code>.
                 </p>
-
                 <p>
-                    Working this way has helped me understand that structure comes before design.
+                    I also use CSS to create responsive layouts and JSON-LD structured
+                    data to provide additional information about the content of the site.
                 </p>
             </section>
-
-            <section id="current-goal">
+            <section id="academic-focus">
                 <header>
-                    <h3>Current goal</h3>
-                    <h4>Continuing to build the site</h4>
+                    <h3>Academic Focus</h3>
+                    <h4>University of Kentucky</h4>
                 </header>
-
                 <p>
-                    My current goal is to keep improving this site as a portfolio by adding stronger
-                    project examples, clearer skills, and better technical explanations.
+                    My studies in Information Communication Technology have given me
+                    experience with areas including information architecture, systems
+                    analysis, Linux systems administration, technology security,
+                    semantic web development, and web design.
                 </p>
-
                 <p>
-                    I also want the site to show my growth in web development, accessibility,
-                    structured data, and technology-focused work.
+                    In addition to my ICT studies, I have additional academic work in
+                    communication and business that supports my interest in technology
+                    and organizational problem-solving.
                 </p>
             </section>
         </article>
-
         <section id="skills">
             <header>
-                <h2>Skills</h2>
-                <p>Technical skills and tools I have worked with</p>
+                <h2>Technical Skills</h2>
+                <p>Technologies and areas I have worked with</p>
             </header>
-
             <ul>
-                <li>Semantic HTML5 structure</li>
-                <li>CSS3 styling and responsive Flexbox layouts</li>
-                <li>JSON and JSON-LD structured data</li>
-                <li>schema.org metadata</li>
-                <li>GitHub Pages and GitHub workflow</li>
-                <li>Web accessibility and validation tools</li>
+                <li>HTML and CSS</li>
+                <li>Semantic HTML5</li>
+                <li>Responsive Web Design</li>
+                <li>Flexbox</li>
+                <li>JSON and JSON-LD</li>
+                <li>Schema.org structured data</li>
+                <li>Web Accessibility</li>
+                <li>Linux</li>
+                <li>Networking</li>
+                <li>Virtual Machines</li>
+                <li>Cybersecurity Testing</li>
+                <li>Systems Analysis</li>
+                <li>Visual Studio Code</li>
             </ul>
         </section>
-
-        <article id="setup">
+        <section id="career-interests">
             <header>
-                <h2>Tools and Workflow</h2>
-                <p>VS Code, Git, and GitHub</p>
+                <h2>Career Interests</h2>
+                <p>Areas I would like to continue developing</p>
             </header>
-
-            <section id="my-setup">
-                <header>
-                    <h3>My setup</h3>
-                    <h4>How I build and update the site</h4>
-                </header>
-
-                <p>
-                    I build and maintain this site using VS Code and GitHub.
-                </p>
-
-                <p>
-                    GitHub Pages makes it easy to publish the site and test it live.
-                </p>
-
-                <p>
-                    My workflow is simple: edit, save, commit, push, and check the live site.
-                </p>
-
-                <p>
-                    Back to the top: <a href="#overview">Portfolio Overview</a>.
-                </p>
-            </section>
-        </article>
+            <p>
+                I am interested in technology positions where I can combine technical
+                knowledge, communication, and problem-solving skills.
+            </p>
+            <ul>
+                <li>Systems Analyst</li>
+                <li>Healthcare Information Technology</li>
+                <li>Information Systems</li>
+                <li>Web Development</li>
+                <li>Technology Management</li>
+                <li>Cybersecurity and Networking</li>
+            </ul>
+        </section>
+        <section id="current-goal">
+            <header>
+                <h2>Current Goal</h2>
+                <p>Continuing to build my professional portfolio</p>
+            </header>
+            <p>
+                My goal is to continue expanding this portfolio as I complete additional
+                coursework, technical projects, and professional experiences.
+            </p>
+            <p>
+                I want this site to demonstrate not only what I have learned, but also
+                how I can apply technology and problem-solving skills to real-world
+                situations.
+            </p>
+            <p>
+                You can learn more about my background on the
+                <a href="about.html">About page</a>
+                or contact me through the
+                <a href="contact.html">Contact page</a>.
+            </p>
+        </section>
     </main>
-
     <footer>
-        <p>&copy; 2026 Mauricio Harp | Semantic Web and Technology Portfolio</p>
+        <p>
+            &copy; 2026 Mauricio Harp | Information Communication Technology Portfolio
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/mauricioharp/"
+               target="_blank"
+               rel="noopener noreferrer">
+                LinkedIn
+            </a>
+        </p>
     </footer>
 </body>
 </html>
